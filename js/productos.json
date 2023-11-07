@@ -2,7 +2,7 @@
     {
         "id": "iphone-001",
         "titulo": "Iphone 01",
-        "imagen": "./img/Iphone/001.jpg",
+        "imagen": "./img/Iphone/001.png",
         "categoria": {
             "nombre": "Iphone",
             "id": "iphone"
@@ -12,7 +12,7 @@
     {
         "id": "iphone-002",
         "titulo": "Iphone 02",
-        "imagen": "./img/Iphone/002.jpg",
+        "imagen": "./img/Iphone/002.png",
         "categoria": {
             "nombre": "Iphone",
             "id": "iphone"
@@ -22,7 +22,7 @@
     {
         "id": "iphone-003",
         "titulo": "Iphone 03",
-        "imagen": "./img/Iphone/003.jpg",
+        "imagen": "./img/Iphone/003.png",
         "categoria": {
             "nombre": "Iphone",
             "id": "iphone"
