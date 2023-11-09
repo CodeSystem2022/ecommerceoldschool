@@ -18,7 +18,7 @@
             background-repeat: no-repeat;
             height: 100vh;
             width: 100vw;
-            margin:0;
+            margin: 0;
             display: flex;
             padding: 0;
             border-radius: 0px;
@@ -41,7 +41,7 @@
         <!-- Contenido del formulario -->
         <div class="login-form">
             <h3>Iniciar sesión</h3>
-            <form>
+            <form id="loginForm">
                 <label for="username">Usuario:</label>
                 <input type="text" id="username" name="username" required>
 
@@ -54,6 +54,24 @@
             </form>
         </div>
     </main>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            // Aquí agregarías tu lógica de autenticación.
+            // Por ahora, simplemente redirigimos a index.html después de hacer clic en el botón.
+
+            // Simulación de autenticación exitosa
+            var authenticated = true;
+
+            if (authenticated) {
+                // Redirige a index.html
+                window.location.href = 'index.html';
+            }
+
+            // Evita que el formulario se envíe de forma predeterminada (no recargue la página)
+            event.preventDefault();
+        });
+    </script>
 </body>
 
 </html>
