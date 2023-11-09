@@ -410,3 +410,55 @@ main {
         max-width: 200px; /* Ajusta el tamaño del logo en la versión web según tus necesidades */
     }
 }
+
+/* Agrega estos estilos para el formulario de inicio de sesión */
+
+
+
+
+.login-form {
+    text-align: center;
+    margin-top: 2rem; /* Espacio superior para separar del título principal */
+    background-color: #c3d0d2; /* Cambia este color al que desees */
+    padding: 1.5rem; /* Añade un espacio de relleno alrededor del formulario */
+    border-radius: 1rem; /* Añade esquinas redondeadas al formulario */
+}
+
+.login-form h3 {
+    color: var(--clr-main);
+    margin-bottom: 1.5rem;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form label {
+    color: var(--clr-main);
+    margin-bottom: 0.5rem;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--clr-main);
+    border-radius: 0.5rem;
+}
+
+.login-form button {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.login-form button:hover {
+    background-color: var(--clr-main-light);
+    color: var(--clr-white);
+}
