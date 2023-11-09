@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-main: rgb(42, 30, 83);
-    --clr-main-light: #6c8587;
+    --clr-main: #167188;
+    --clr-main-light: #0c3f5a;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
-    --clr-red: #961818;
+    --clr-red: #a52525;
 }
 
 * {
@@ -48,7 +48,9 @@ aside {
 
 .logo {
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 2.0rem;
+    
+
 }
 
 .menu {
@@ -144,7 +146,7 @@ main {
 
 .contenedor-productos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
@@ -386,10 +388,25 @@ main {
 
 }
 
+.logo-img {
+    max-width: 200px; /* Establece el tamaño máximo en píxeles */
+    height: auto; /* Permite que la altura se ajuste automáticamente proporcionalmente al ancho */
+}
+
 
 
 @media screen and (max-width: 400px) {
     .contenedor-productos {
         grid-template-columns: 1fr;
+    }
+}
+/* Estilos para logo en la versión web */
+@media screen and (min-width: 600px) {
+    .logo {
+        font-size: 2.5rem; /* Ajusta el tamaño del logo en la versión web según tus necesidades */
+    }
+
+    .logo-img {
+        max-width: 200px; /* Ajusta el tamaño del logo en la versión web según tus necesidades */
     }
 }
