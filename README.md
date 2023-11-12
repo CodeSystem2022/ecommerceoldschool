@@ -1,8 +1,11 @@
 # Bienvenidos al proyecto final de OLD SCHOOL STORE UTN-SAN RAFAEL-2023
+![Old School](ecommerceoldschool/OLD SCHOOL.gif)
+ecommerceoldschool\OLD SCHOOL.gif
+
 
 ## Descripción del Proyecto
 
-Old School Store es un ecommerce de dispositivos móviles que ofrece productos de las marcas iPhone, Samsung y Motorola. La aplicación web está construida utilizando tecnologías web estándar como HTML, JavaScript y CSS en el frontend, mientras que el backend se implementa con Node.js y SQLite como base de datos. Además, se utiliza la librería bcrypt para el manejo seguro de contraseñas y express para la creación del servidor.
+Old School Store es un ecommerce que ofrece productos de las marcas iPhone, Samsung y Motorola. La aplicación web está construida utilizando tecnologías web estándar como HTML, JavaScript y CSS en el frontend, mientras que el backend se implementa con Node.js y SQLite como base de datos. Además, se utiliza la librería bcrypt para el manejo seguro de contraseñas y express para la creación del servidor.
 
 ## Instalación
 
@@ -51,16 +54,19 @@ Para ejecutar el proyecto, primero debes asegurarte de tener Node.js y npm insta
 ## Base de Datos
 - **tu_basedatos.db:** Archivo de base de datos SQLite que almacena la información de los usuarios registrados.
 
-# Uso
-
+## Uso ##
 Inicia la aplicación con el siguiente comando:
+
 
 ```bash
 npm run dev
-o
+```
+ o
+```bash
 node server.js
+```
 
-# Uso
+## Uso ##
 
 Abre tu navegador y accede a [http://localhost:5000](http://localhost:5000) para comenzar a explorar el ecommerce.
 
@@ -74,5 +80,3 @@ Abre tu navegador y accede a [http://localhost:5000](http://localhost:5000) para
 
 
 # Gracias por ser parte de Old School!!!
-
-
