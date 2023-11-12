@@ -1,6 +1,6 @@
 # Bienvenidos al proyecto final de OLD SCHOOL STORE UTN-SAN RAFAEL-2023
-![Old School](ecommerceoldschool/OLD SCHOOL.gif)
-ecommerceoldschool\OLD SCHOOL.gif
+![Old School](/OLD SCHOOL.gif)
+
 
 
 ## Descripción del Proyecto
