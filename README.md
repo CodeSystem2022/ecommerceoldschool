@@ -1,5 +1,5 @@
 # Bienvenidos al proyecto final de OLD SCHOOL STORE UTN-SAN RAFAEL-2023
-![Old School](/OLD SCHOOL.gif)
+![Old School](OLDSCHOOL.gif)
 
 
 
