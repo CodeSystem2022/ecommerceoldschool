@@ -41,7 +41,7 @@
         <!-- Contenido del formulario -->
         <div class="login-form">
             <h3>Iniciar sesión</h3>
-            <form id="loginForm">
+            <form id="loginForm" action="/registro" method="post">
                 <label for="username">Usuario:</label>
                 <input type="text" id="username" name="username" required>
 
@@ -53,25 +53,49 @@
                 </button>
             </form>
         </div>
+
+        <script>
+            document.getElementById('loginForm').addEventListener('submit', async function (event) {
+                event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+
+                // Obtén referencias a los campos de entrada
+                const usernameInput = document.getElementById('username');
+                const passwordInput = document.getElementById('password');
+
+                try {
+                    const response = await fetch('/registro', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            username: usernameInput.value,
+                            password: passwordInput.value,
+                        }),
+                    });
+
+                    if (response.ok) {
+                        // Muestra un mensaje emergente indicando el registro exitoso
+                        alert('Usuario registrado exitosamente');
+
+                        // Limpia los campos después del registro exitoso
+                        usernameInput.value = '';
+                        passwordInput.value = '';
+
+                        // Redirección a index.html
+                        window.location.href = 'index.html';
+                    } else {
+                        console.error('Error al registrar al usuario');
+                    }
+                } catch (error) {
+                    console.error('Error en la solicitud:', error);
+                }
+            });
+        </script>
     </main>
-
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function (event) {
-            // Aquí agregarías tu lógica de autenticación.
-            // Por ahora, simplemente redirigimos a index.html después de hacer clic en el botón.
-
-            // Simulación de autenticación exitosa
-            var authenticated = true;
-
-            if (authenticated) {
-                // Redirige a index.html
-                window.location.href = 'index.html';
-            }
-
-            // Evita que el formulario se envíe de forma predeterminada (no recargue la página)
-            event.preventDefault();
-        });
-    </script>
 </body>
+
+</html>
+
 
 </html>
